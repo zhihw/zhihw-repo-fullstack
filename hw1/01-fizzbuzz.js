@@ -25,3 +25,23 @@ Use console.log() to write the proper output to the command line.
 // 14
 // fizzbuzz
 // ...
+
+function fizzBuzz(x) {
+    if (x % 15 ===0) {
+        return 'fizzbuzz';
+    } else if (x % 3 === 0) {
+        return 'fizz';
+    } else if (x % 5 === 0) {
+        return 'buzz';
+    } else {
+        return x;
+    }
+}
+
+function main() {
+    for (let i = 1; i <= 100; i++) {
+        console.log(fizzBuzz(i));
+    }
+}
+
+main();
